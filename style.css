@@ -1,0 +1,230 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Lumanosimo", cursive;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-top: 18px;
+  align-items: center;
+  width: 85%;
+}
+.logo {
+  width: 80px;
+}
+.linkitems {
+  display: inline-block;
+  margin: 10px 20px;
+}
+.links {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.links:hover {
+  color: orangered;
+  font-size: 20px;
+}
+.title {
+  margin-top: 13%;
+  margin-left: 8%;
+}
+.title_h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+#lastname {
+  color: orangered;
+}
+.download {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: inline-block;
+  transition: 0.8s;
+}
+.download:hover {
+  background-color: orangered;
+}
+.images {
+  position: absolute;
+  width: 45%;
+  height: 80%;
+  bottom: 0px;
+  right: 30px;
+}
+.images img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  bottom: 0px;
+  transform: translatex(-50%);
+  transition: bottom 1s, left 2s;
+}
+#shape {
+  width: 500px;
+  object-fit: contain;
+}
+.images:hover #shape {
+  bottom: 50px;
+}
+.images:hover #girl {
+  left: 40%;
+}
+#about {
+  margin: 15% 8% 0px 8%;
+  height: 80vh;
+}
+.headings {
+  text-align: center;
+}
+.headings h2 {
+  font-size: 35px;
+}
+.headings span {
+  font-size: 20px;
+  color: orangered;
+}
+.contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.imgs img {
+  width: 80%;
+  margin-top: 20px;
+}
+.about-details {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 20px;
+}
+.information {
+  margin-top: 20px;
+}
+.info-box {
+  margin-bottom: 20px;
+}
+.info-box span {
+  margin-left: 10px;
+}
+.skills {
+  margin: 5px 40px;
+}
+.skills h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.skills p {
+  color: orangered;
+}
+.skill-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.bar-container h3,
+span {
+  letter-spacing: 3px;
+}
+.base-bar {
+  position: absolute;
+  width: 100%;
+  height: 0.9rem;
+  background-color: black;
+  border-radius: 10px;
+  bottom: 0px;
+}
+.htmlbar {
+  background-color: orangered;
+  width: 95%;
+}
+.cssbar {
+  background-color: orangered;
+  width: 80%;
+}
+.jsbar {
+  background-color: orangered;
+  width: 70%;
+}
+.reactbar {
+  background-color: orangered;
+  width: 90%;
+}
+.contact h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact p {
+  text-align: center;
+  color: orangered;
+}
+.icon-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  gap: 20px;
+}
+.icon,
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.1s;
+}
+.icon i {
+  color: black;
+}
+.icon:hover {
+  background-image: linear-gradient(yellow, red);
+}
+.icon :hover i {
+  color: white;
+  animation: shake 0.75s infinite;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+}
+.footer p {
+  text-align: center;
+  padding: 10px;
+}
+.arrow {
+  float: right;
+  margin: 10px 20px;
+  background-image: linear-gradient(yellow, red);
+}
